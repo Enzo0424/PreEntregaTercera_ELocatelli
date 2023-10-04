@@ -16,5 +16,5 @@ class Consultorios (models.Model):
     direccion_consult = models.CharField(max_length=30)
 
 class Tratamientos (models.Model):
-    codigo_tratamiento = models.CharField(max_length=4, unique=True)
-    descripcion_tratamiento = models.CharField(max_length=30)
+    codigo = models.CharField(max_length=4, unique=True)
+    descripcion = models.CharField(max_length=30)

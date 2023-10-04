@@ -1,9 +1,51 @@
 {% extends "AppKalos/padre.html" %}
 {% load static %}
 
+{% block header1 %} <h2 class="masthead-subheading mb-0"> Consultorios </h2> {% endblock header1 %}
 {% block section1 %}
 
-<!--Aquí va lo que cambia, y lo asociado a está vista :) -->
-<h1>CONSULTORIOS</h1>
+<section id="">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="p-5 text-center d-flex justify-content-center align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                   <div class="p-5"><img class="img-fluid rounded-circle" src="{% static 'AppKalos/assets/img/02.jpg' %}" alt="..." /></div>
+                </div>
+            </div>    
+            <div class="p-5 text-center d-flex justify-content-center align-items-center">
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                    <h2 class="display-4">Kalos</h2>
+                    <p>San Martin 2100 </p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</section>
+
+<section id="scroll">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="p-5 text-center d-flex justify-content-center align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                   <div class="p-5"><img class="img-fluid rounded-circle" src="{% static 'AppKalos/assets/img/03.jpg' %}" alt="..." /></div>
+                </div>
+            </div>
+            <div class="p-5 text-center d-flex justify-content-center align-items-center">
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                    <h2 class="display-4">SDM</h2>
+                    <p>Cordoba 8500 </p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</section>
 
 {% endblock section1 %}

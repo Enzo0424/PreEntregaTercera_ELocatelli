@@ -1,5 +1,5 @@
 from django.urls import path
-from AppKalos.views import inicio, paciente, profesional, consultorio, tratamiento, pacientes_form,buscar_pacientes,mostrar_pacientes
+from AppKalos.views import inicio, paciente, profesional, consultorio, tratamiento, pacientes_form,buscar_pacientes,buscar_profesional
 
 
 urlpatterns = [
@@ -10,5 +10,5 @@ urlpatterns = [
     path('Tratamientos/', tratamiento, name="Tratamientos"),
     path('Pacientesform/', pacientes_form, name="Carga de Pacientes"),
     path('Buscar_Pacientes/', buscar_pacientes, name="Buscar Pacientes"),
-    path('Mostrar_Pacientes/', mostrar_pacientes, name="Mostrar Pacientes"),
+    path('Buscar_Profesional/', buscar_profesional, name="Buscar Profesional"),
 ]

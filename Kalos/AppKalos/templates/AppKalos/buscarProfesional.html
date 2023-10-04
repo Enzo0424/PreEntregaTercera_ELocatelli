@@ -1,0 +1,25 @@
+{% extends "AppKalos/padre.html" %}
+{% load static %}
+
+{% block header1 %} <h2 class="masthead-subheading mb-0"> Profesionales </h2> 
+<h3> Kinesiologo </h3>
+<h3> Traumatologo </h3>
+<h3> Personal Trainer </h3>
+<h3> Nutricionista </h3>
+
+{% endblock header1 %}
+
+{% block botonscroll %} 
+
+{% endblock botonscroll %}
+
+{% block section1 %}
+
+<form action="" method="POST"> {% csrf_token %}
+    <table>
+        {{ miFormulario.as_table }}
+    </table>
+    <input type="submit" value="Buscar">
+</form>
+
+{% endblock section1 %}

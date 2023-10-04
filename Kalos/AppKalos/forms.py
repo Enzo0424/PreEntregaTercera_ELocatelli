@@ -8,5 +8,6 @@ class PacienteFormulario(forms.Form):
 class BuscarPaciente(forms.Form):
     dni = forms.IntegerField()
     
-    
-    
+class BuscarProfesional (forms.Form):
+    profesion = forms.CharField(max_length=30)
+
