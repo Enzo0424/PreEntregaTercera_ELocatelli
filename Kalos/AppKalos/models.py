@@ -12,9 +12,9 @@ class Profesionales (models.Model):
     profesion = models.CharField(max_length=30)
 
 class Consultorios (models.Model):
-    nombre_consult = models.CharField(max_length=20)
-    direccion_consult = models.CharField(max_length=30)
+    nombre = models.CharField(max_length=20)
+    direccion = models.CharField(max_length=30)
 
 class Tratamientos (models.Model):
-    codigo = models.CharField(max_length=4, unique=True)
-    descripcion = models.CharField(max_length=30)
+    codigo = models.CharField(max_length=4)
+    descripcion = models.CharField(max_length=50)
